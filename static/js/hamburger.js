@@ -14,7 +14,7 @@ function hideMenu() {
     navLinks.style.display = 'none';
   }, 1000);
 }
-export default function addEvents() {
+export function addEvents() {
   document.querySelector('.menu-open').addEventListener('click', () => showMenu());
   document.querySelector('.menu-close').addEventListener('click', () => hideMenu());
   document.querySelectorAll('.section-link').forEach((link) => {
